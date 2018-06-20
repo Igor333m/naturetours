@@ -4,6 +4,11 @@ COLORS:
 Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
+Dark red: #AA0000;
+Dark orange: #D43600;
+Orange: #FF8800;
+Light orange: #FFCA00;
+Yellow: #FFFF00;
 
 */
 
@@ -27,10 +32,21 @@ body {
 	height: 95vh;
 	background-image: linear-gradient(
 		to right bottom, 
-		rgba(126, 213, 111, 0.8), 
-		rgba(40, 180, 133, 0.8)), 
+		rgba(0, 136, 255, 0.8), 
+		rgba(0, 202, 255, 0.8)), 
 	  url(../img/hero.jpg);
 	background-size: cover;
 	background-position: top;
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.logo {
+	height: 35px;
 }
